@@ -15,6 +15,8 @@
 		64DD5FB62B95C937002E04CC /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD5FB52B95C937002E04CC /* AddExpenseView.swift */; };
 		64DD5FB82B95C94C002E04CC /* EditExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD5FB72B95C94C002E04CC /* EditExpenseView.swift */; };
 		64DD5FBA2B95C958002E04CC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD5FB92B95C958002E04CC /* SettingsView.swift */; };
+		64DD5FBD2B95CD02002E04CC /* ExpenseTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64DD5FBB2B95CD02002E04CC /* ExpenseTracker.xcdatamodeld */; };
+		64DD5FBF2B95CDB8002E04CC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD5FBE2B95CDB8002E04CC /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		64DD5FB52B95C937002E04CC /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		64DD5FB72B95C94C002E04CC /* EditExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExpenseView.swift; sourceTree = "<group>"; };
 		64DD5FB92B95C958002E04CC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		64DD5FBC2B95CD02002E04CC /* ExpenseTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpenseTracker.xcdatamodel; sourceTree = "<group>"; };
+		64DD5FBE2B95CDB8002E04CC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		64DD5FB22B95C8EC002E04CC /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				64DD5FBB2B95CD02002E04CC /* ExpenseTracker.xcdatamodeld */,
+				64DD5FBE2B95CDB8002E04CC /* DataController.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 				64DD5FB42B95C92B002E04CC /* ExoenseView.swift in Sources */,
 				64DD5FB82B95C94C002E04CC /* EditExpenseView.swift in Sources */,
 				64DD5FA52B95C8BF002E04CC /* MainView.swift in Sources */,
+				64DD5FBD2B95CD02002E04CC /* ExpenseTracker.xcdatamodeld in Sources */,
 				64DD5FBA2B95C958002E04CC /* SettingsView.swift in Sources */,
+				64DD5FBF2B95CDB8002E04CC /* DataController.swift in Sources */,
 				64DD5FA32B95C8BF002E04CC /* Expense_TrackerApp.swift in Sources */,
 				64DD5FB62B95C937002E04CC /* AddExpenseView.swift in Sources */,
 			);
@@ -384,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		64DD5FBB2B95CD02002E04CC /* ExpenseTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				64DD5FBC2B95CD02002E04CC /* ExpenseTracker.xcdatamodel */,
+			);
+			currentVersion = 64DD5FBC2B95CD02002E04CC /* ExpenseTracker.xcdatamodel */;
+			path = ExpenseTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 64DD5F972B95C8BF002E04CC /* Project object */;
 }
