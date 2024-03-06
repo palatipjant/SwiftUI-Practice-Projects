@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExpenseView: View {
     
+    @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var expenses: FetchedResults<Expense>
     
     var body: some View {
@@ -26,8 +27,7 @@ struct ExpenseView: View {
                                           date: expense.date!,
                                           name: expense.name!,
                                           type: expense.type ?? "Transportation")
-                        }
-                    }
+                        }                    }
                 }
                 .scrollIndicators(.hidden)
             }
