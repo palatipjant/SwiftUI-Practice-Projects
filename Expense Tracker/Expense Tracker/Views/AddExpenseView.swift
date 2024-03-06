@@ -9,12 +9,14 @@ import SwiftUI
 
 struct AddExpenseView: View {
     
+    @AppStorage("darkMode") var isDarkMode = false
+
     @Environment(\.managedObjectContext) var manageObjContext
     
     @State private var name = ""
     @State private var amount = ""
     @State private var isExpenseAdded = false
-    @State private var selectedCategiry: String? = nil
+    @State private var selectedCategory: String? = nil
     
     let categories = ["Food", " Housing", "Transport", "Entertainment", "Utillities"]
     
@@ -24,13 +26,13 @@ struct AddExpenseView: View {
                 TextField("Name of Expense", text: $name)
                     .padding()
                     .foregroundStyle(.secondary)
-                    .background(.white)
+                    .background(isDarkMode ? .black : .white)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                 TextField("Amount", text: $amount)
                     .padding()
                     .foregroundStyle(.secondary)
-                    .background(.white)
+                    .background(isDarkMode ? .black : .white)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                 
@@ -41,13 +43,13 @@ struct AddExpenseView: View {
                 ], spacing: 16,  content: {
                     ForEach(categories[0...2], id:\.self) { category in
                         Button(action: {
-                            selectedCategiry = category
+                            selectedCategory = category
                         }, label: {
                             Text(category)
-                                .foregroundStyle(selectedCategiry == category ? .white : .black)
+                                .foregroundStyle(selectedCategory == category ? .white : .black)
                                 .bold()
                                 .frame(maxWidth: .infinity, minHeight: 50)
-                                .background(selectedCategiry == category ? .blue : .white)
+                                .background(selectedCategory == category ? .blue : .white)
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
                                 .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         })
@@ -59,13 +61,13 @@ struct AddExpenseView: View {
                 ], spacing: 16,  content: {
                     ForEach(categories[3...4], id:\.self) { category in
                         Button(action: {
-                            selectedCategiry = category
+                            selectedCategory = category
                         }, label: {
                             Text(category)
-                                .foregroundStyle(selectedCategiry == category ? .white : .black)
+                                .foregroundStyle(selectedCategory == category ? .white : .black)
                                 .bold()
                                 .frame(maxWidth: .infinity, minHeight: 50)
-                                .background(selectedCategiry == category ? .blue : .white)
+                                .background(selectedCategory == category ? .blue : .white)
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
                                 .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         })
@@ -77,7 +79,7 @@ struct AddExpenseView: View {
                     expense.date = Date()
                     expense.id = UUID()
                     expense.name = name
-                    expense.type = selectedCategiry
+                    expense.type = selectedCategory
                     
                     do {
                         try manageObjContext.save()
@@ -108,13 +110,14 @@ struct AddExpenseView: View {
                     isExpenseAdded = false
                     name = ""
                     amount = ""
-                    selectedCategiry = nil
+                    selectedCategory = nil
                 } label: {
                     Text("Ok")
                 }
 
             }
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

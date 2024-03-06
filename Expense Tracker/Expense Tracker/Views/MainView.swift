@@ -12,6 +12,7 @@ struct MainView: View {
         TabView{
             ExpenseView().tabItem { Label("Expense", systemImage: "dollarsign") }
             AddExpenseView().tabItem { Label("Add Expense", systemImage: "plus") }
+            SettingsView().tabItem { Label("Settings", systemImage: "gear") }
         }
     }
 }
