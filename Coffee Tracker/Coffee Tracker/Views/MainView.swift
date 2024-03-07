@@ -19,6 +19,13 @@ struct MainView: View {
             List{
                 ForEach(coffee) { coffee in
                     CoffeeCell(amount: coffee.amount ?? "0.0", type: coffee.type ?? "NIL", date: coffee.date ?? Date())
+                        .contextMenu(ContextMenu(menuItems: {
+                            Button(action: {
+                                manageObjContext.delete(coffee)
+                            }, label: {
+                                Label("Delete", systemImage: "trash")
+                            })
+                        }))
                 }
                 .onDelete(perform: { indexSet in
                     for index in indexSet {
