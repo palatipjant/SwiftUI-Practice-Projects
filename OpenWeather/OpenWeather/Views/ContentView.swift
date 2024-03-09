@@ -19,12 +19,10 @@ struct ContentView: View {
             } else {
                 if locationManager.isLoading {
                     // loading view
+                } else {
+                    WelcomeView(locationManager: locationManager)
                 }
             }
-            
-            WelcomeView(locationManager: locationManager)
-            
-            
         }
     }
 }
