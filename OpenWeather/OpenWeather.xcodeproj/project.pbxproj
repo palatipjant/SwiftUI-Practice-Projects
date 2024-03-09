@@ -13,6 +13,7 @@
 		6456FF292B9CB0B7009FD856 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6456FF282B9CB0B7009FD856 /* Preview Assets.xcassets */; };
 		6456FF342B9CB105009FD856 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456FF332B9CB105009FD856 /* LocationManager.swift */; };
 		6456FF362B9CB433009FD856 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456FF352B9CB433009FD856 /* WelcomeView.swift */; };
+		6456FF382B9CB628009FD856 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456FF372B9CB628009FD856 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		6456FF282B9CB0B7009FD856 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6456FF332B9CB105009FD856 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		6456FF352B9CB433009FD856 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6456FF372B9CB628009FD856 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				6456FF232B9CB0B7009FD856 /* ContentView.swift */,
 				6456FF352B9CB433009FD856 /* WelcomeView.swift */,
+				6456FF372B9CB628009FD856 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				6456FF242B9CB0B7009FD856 /* ContentView.swift in Sources */,
 				6456FF222B9CB0B7009FD856 /* OpenWeatherApp.swift in Sources */,
 				6456FF342B9CB105009FD856 /* LocationManager.swift in Sources */,
+				6456FF382B9CB628009FD856 /* LoadingView.swift in Sources */,
 				6456FF362B9CB433009FD856 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

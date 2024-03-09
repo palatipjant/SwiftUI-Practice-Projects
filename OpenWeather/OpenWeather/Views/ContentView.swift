@@ -18,7 +18,7 @@ struct ContentView: View {
                 Text("Current coordinates, \(location.longitude), \(location.latitude)")
             } else {
                 if locationManager.isLoading {
-                    // loading view
+                    LoadingView()
                 } else {
                     WelcomeView(locationManager: locationManager)
                 }
