@@ -22,7 +22,7 @@ struct WelcomeView: View {
                 .opacity(isAnimating ? 1 : 0)
                 .offset(y: isAnimating ? 0 : -40)
                 .animation(.easeOut(duration: 4), value: isAnimating)
-                .brightness(0.35)
+                .brightness(0.3)
                 
             
             VStack{
@@ -30,11 +30,11 @@ struct WelcomeView: View {
                     Text("Welcome to OpenWeather App")
                         .bold()
                         .font(.title)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(.white)
                     Text("Share your present location to retrieve the weather information for your area.")
                         .bold()
                         .padding()
-                        .foregroundStyle(.black)
+                        .foregroundStyle(.white)
                         
                 })
                 .multilineTextAlignment(.center)
@@ -43,10 +43,10 @@ struct WelcomeView: View {
                 LocationButton(.shareCurrentLocation) {
                     locationManager.requestLocation()
                 }
+                .tint(.accent)
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .symbolVariant(.fill)
-                .background(.white)
-                .foregroundStyle(.black)
+                .foregroundStyle(.white)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
