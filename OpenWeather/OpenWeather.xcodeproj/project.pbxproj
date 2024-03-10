@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6430DCB32B9DC0AF002ADEB5 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430DCB22B9DC0AF002ADEB5 /* WeatherManager.swift */; };
+		6430DCB52B9DC823002ADEB5 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430DCB42B9DC823002ADEB5 /* WeatherView.swift */; };
+		6430DCB72B9DCA16002ADEB5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430DCB62B9DCA16002ADEB5 /* Extension.swift */; };
+		6430DCB92B9DCC5F002ADEB5 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430DCB82B9DCC5F002ADEB5 /* WeatherRow.swift */; };
 		6456FF222B9CB0B7009FD856 /* OpenWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456FF212B9CB0B7009FD856 /* OpenWeatherApp.swift */; };
 		6456FF242B9CB0B7009FD856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456FF232B9CB0B7009FD856 /* ContentView.swift */; };
 		6456FF262B9CB0B7009FD856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6456FF252B9CB0B7009FD856 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6430DCB22B9DC0AF002ADEB5 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		6430DCB42B9DC823002ADEB5 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		6430DCB62B9DCA16002ADEB5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		6430DCB82B9DCC5F002ADEB5 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		6456FF1E2B9CB0B7009FD856 /* OpenWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6456FF212B9CB0B7009FD856 /* OpenWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApp.swift; sourceTree = "<group>"; };
 		6456FF232B9CB0B7009FD856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 				6456FF232B9CB0B7009FD856 /* ContentView.swift */,
 				6456FF352B9CB433009FD856 /* WelcomeView.swift */,
 				6456FF372B9CB628009FD856 /* LoadingView.swift */,
+				6430DCB42B9DC823002ADEB5 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6456FF332B9CB105009FD856 /* LocationManager.swift */,
+				6430DCB22B9DC0AF002ADEB5 /* WeatherManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -100,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6456FF392B9CBF04009FD856 /* BlobShape.swift */,
+				6430DCB82B9DCC5F002ADEB5 /* WeatherRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 		6456FF322B9CB0EB009FD856 /* Utillities */ = {
 			isa = PBXGroup;
 			children = (
+				6430DCB62B9DCA16002ADEB5 /* Extension.swift */,
 			);
 			path = Utillities;
 			sourceTree = "<group>";
@@ -181,12 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6430DCB72B9DCA16002ADEB5 /* Extension.swift in Sources */,
 				6456FF242B9CB0B7009FD856 /* ContentView.swift in Sources */,
 				6456FF222B9CB0B7009FD856 /* OpenWeatherApp.swift in Sources */,
 				6456FF342B9CB105009FD856 /* LocationManager.swift in Sources */,
+				6430DCB32B9DC0AF002ADEB5 /* WeatherManager.swift in Sources */,
+				6430DCB92B9DCC5F002ADEB5 /* WeatherRow.swift in Sources */,
 				6456FF382B9CB628009FD856 /* LoadingView.swift in Sources */,
 				6456FF362B9CB433009FD856 /* WelcomeView.swift in Sources */,
 				6456FF3A2B9CBF04009FD856 /* BlobShape.swift in Sources */,
+				6430DCB52B9DC823002ADEB5 /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
