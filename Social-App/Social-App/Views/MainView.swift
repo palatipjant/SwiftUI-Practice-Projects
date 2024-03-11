@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @StateObject var loginViewModel = LoginViewModel()
+    
     var body: some View {
-        LoginView()
+        if loginViewModel.isCurrentlyLoggedOut {
+            LoginView(loginViewModel: loginViewModel)
+        } else {
+            TabView {
+                PostView()
+                    .tabItem { Label("Posts",
+                                     systemImage: "rectangle.portrait.on.rectangle.portrait.angled") }
+                
+                ProfileView(loginViewModel: loginViewModel)
+                    .tabItem { Label("Profile", systemImage: "gear") }
+            }
+        }
     }
 }
 

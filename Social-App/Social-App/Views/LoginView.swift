@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @ObservedObject var loginViewModel: LoginViewModel
+    
     @State private var isLoginMode = false
     @State private var email = ""
     @State private var password = ""
@@ -77,7 +79,7 @@ struct LoginView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     
                     Button(action: {
-                        //
+                        handleAction()
                     }, label: {
                         Text(isLoginMode ? "Login" : "Create account")
                             .foregroundStyle(.white)
@@ -110,8 +112,19 @@ struct LoginView: View {
             })
         }
     }
+    private func handleAction() {
+        if isLoginMode {
+            loginViewModel.LoginUser(email: email, password: password)
+        } else {
+            if let image = image {
+                loginViewModel.createNewAccount(email: email, password: password, image: image)
+            } else {
+                self.loginStateMessage = "Choose Image first!"
+            }
+        }
+    }
 }
 
 #Preview {
-    LoginView()
+    LoginView(loginViewModel: LoginViewModel())
 }
