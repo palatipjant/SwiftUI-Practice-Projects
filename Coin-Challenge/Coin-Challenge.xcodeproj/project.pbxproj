@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		642B8DA32B9ED0F000D9D7D1 /* Coin_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B8DA22B9ED0F000D9D7D1 /* Coin_ChallengeApp.swift */; };
-		642B8DA52B9ED0F000D9D7D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B8DA42B9ED0F000D9D7D1 /* ContentView.swift */; };
+		642B8DA52B9ED0F000D9D7D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B8DA42B9ED0F000D9D7D1 /* MainView.swift */; };
 		642B8DA72B9ED0F000D9D7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642B8DA62B9ED0F000D9D7D1 /* Assets.xcassets */; };
 		642B8DAA2B9ED0F000D9D7D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642B8DA92B9ED0F000D9D7D1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		642B8D9F2B9ED0F000D9D7D1 /* Coin-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coin-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		642B8DA22B9ED0F000D9D7D1 /* Coin_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_ChallengeApp.swift; sourceTree = "<group>"; };
-		642B8DA42B9ED0F000D9D7D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		642B8DA42B9ED0F000D9D7D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		642B8DA62B9ED0F000D9D7D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642B8DA92B9ED0F000D9D7D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				642B8DA22B9ED0F000D9D7D1 /* Coin_ChallengeApp.swift */,
-				642B8DA42B9ED0F000D9D7D1 /* ContentView.swift */,
+				642B8DB02B9ED17800D9D7D1 /* Views */,
+				642B8DB12B9ED17D00D9D7D1 /* Manager */,
+				642B8DB22B9ED18400D9D7D1 /* Components */,
 				642B8DA62B9ED0F000D9D7D1 /* Assets.xcassets */,
 				642B8DA82B9ED0F000D9D7D1 /* Preview Content */,
 			);
@@ -65,6 +67,28 @@
 				642B8DA92B9ED0F000D9D7D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		642B8DB02B9ED17800D9D7D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				642B8DA42B9ED0F000D9D7D1 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		642B8DB12B9ED17D00D9D7D1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		642B8DB22B9ED18400D9D7D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				642B8DA52B9ED0F000D9D7D1 /* ContentView.swift in Sources */,
+				642B8DA52B9ED0F000D9D7D1 /* MainView.swift in Sources */,
 				642B8DA32B9ED0F000D9D7D1 /* Coin_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
