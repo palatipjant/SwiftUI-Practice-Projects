@@ -43,7 +43,7 @@ struct MainView: View {
             
             Picker("Crypto", selection: $pickerCrypto) {
                 Text("BTC").tag("BTC")
-                Text("AUD").tag("ETH")
+                Text("ETH").tag("ETH")
                 Text("USDT").tag("USDT")
                 Text("BNB").tag("BNB")
                 Text("SOL").tag("SOL")
