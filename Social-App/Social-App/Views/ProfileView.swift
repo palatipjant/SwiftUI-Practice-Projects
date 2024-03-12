@@ -11,6 +11,8 @@ struct ProfileView: View {
     
     @ObservedObject var loginViewModel: LoginViewModel
     @State private var showLogOutOptions = false
+    @State private var showAddPostView = false
+    
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -30,6 +32,15 @@ struct ProfileView: View {
                             .foregroundStyle(.black)
                     })
                 }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button{
+                        showAddPostView.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.system(size: 24))
+                            .foregroundStyle(.blue)
+                    }
+                }
             })
             .confirmationDialog("Settings", isPresented: $showLogOutOptions) {
                 Button("Sign Out") {
@@ -38,6 +49,9 @@ struct ProfileView: View {
             } message: {
                 Text("What do you want to do?")
             }
+            .sheet(isPresented: $showAddPostView, content: {
+                AddPostView()
+            })
         }
     }
 }
