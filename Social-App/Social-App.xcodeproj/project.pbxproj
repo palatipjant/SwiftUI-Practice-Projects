@@ -22,6 +22,8 @@
 		6432F87C2B9F4EBE00518AC8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6432F87B2B9F4EBE00518AC8 /* LoginViewModel.swift */; };
 		6432F87E2B9F573900518AC8 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6432F87D2B9F573900518AC8 /* PostView.swift */; };
 		6432F8802B9F574700518AC8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6432F87F2B9F574700518AC8 /* ProfileView.swift */; };
+		6469378C2BA0210C00438A91 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6469378B2BA0210C00438A91 /* AddPostView.swift */; };
+		6469378E2BA0212400438A91 /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6469378D2BA0212400438A91 /* AddPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		6432F87B2B9F4EBE00518AC8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6432F87D2B9F573900518AC8 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		6432F87F2B9F574700518AC8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6469378B2BA0210C00438A91 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		6469378D2BA0212400438A91 /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 				6432F86A2B9EF8BF00518AC8 /* LoginView.swift */,
 				6432F87D2B9F573900518AC8 /* PostView.swift */,
 				6432F87F2B9F574700518AC8 /* ProfileView.swift */,
+				6469378B2BA0210C00438A91 /* AddPostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				6432F87B2B9F4EBE00518AC8 /* LoginViewModel.swift */,
+				6469378D2BA0212400438A91 /* AddPostViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,10 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6432F8802B9F574700518AC8 /* ProfileView.swift in Sources */,
+				6469378C2BA0210C00438A91 /* AddPostView.swift in Sources */,
 				6432F87E2B9F573900518AC8 /* PostView.swift in Sources */,
 				6432F86B2B9EF8BF00518AC8 /* LoginView.swift in Sources */,
 				6432F86D2B9EFBFB00518AC8 /* ImagePicker.swift in Sources */,
 				6432F87C2B9F4EBE00518AC8 /* LoginViewModel.swift in Sources */,
+				6469378E2BA0212400438A91 /* AddPostViewModel.swift in Sources */,
 				6432F87A2B9F4DEE00518AC8 /* FirebaseManager.swift in Sources */,
 				6432F85C2B9EF86900518AC8 /* MainView.swift in Sources */,
 				6432F85A2B9EF86900518AC8 /* Social_AppApp.swift in Sources */,

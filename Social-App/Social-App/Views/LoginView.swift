@@ -62,7 +62,7 @@ struct LoginView: View {
                     
                     TextField("Email", text: $email)
                         .keyboardType(.emailAddress)
-                        .textInputAutocapitalization(.none)
+                        .textInputAutocapitalization(.never)
                         .bold()
                         .padding()
                         .frame(width: 300, height: 50)
@@ -70,7 +70,7 @@ struct LoginView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     
                     SecureField("Password", text: $password)
-                        .textInputAutocapitalization(.none)
+                        .textInputAutocapitalization(.never)
                         .autocorrectionDisabled(true)
                         .bold()
                         .padding()
